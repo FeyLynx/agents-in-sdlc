@@ -3,7 +3,7 @@ slug: pt-br/real-world-development/app
 title: "Aplicativo GitHub Copilot"
 authors:
   - geektrainer
-lastUpdated: 2026-09-17
+lastUpdated: 2026-10-22
 ---
 
 O [**aplicativo GitHub Copilot**](https://docs.github.com/copilot/concepts/agents/github-copilot-app) é um aplicativo para desktop criado com base no Copilot CLI que reúne o desenvolvimento orientado por agentes em um espaço de trabalho único e focado. Ele oferece sessões paralelas de agentes, modos de sessão alternáveis, canvases compartilhados e gerenciamento nativo de issues e pull requests do GitHub, incluindo o **Agent Merge**, que conduz um pull request por rebases, feedback de revisão, correções de CI e merge.
@@ -18,7 +18,7 @@ O workshop segue um fluxo contínuo da Tailspin Toys:
 6. Adicione o servidor do Model Context Protocol (MCP) do Playwright e use-o para explorar a filtragem em um navegador.
 7. Crie um agente personalizado de garantia de qualidade (QA) e use-o para revisar requisitos, cobertura e evidências de verificação.
 8. Revise toda a alteração de filtragem e use o Agent Merge no segundo PR.
-9. Use o canvas Database Explorer existente e, em seguida, crie e teste um canvas de triagem vinculado ao repositório.
+9. Confira se os recursos de canvas estão disponíveis, use o Database Explorer e crie e teste um canvas de triagem vinculado ao repositório. Se os recursos necessários não estiverem disponíveis, registre o bloqueio e use a alternativa somente leitura ou continue para a revisão final.
 
 Para manter o foco do workshop, você criará dois PRs: um para avaliações por estrelas e outro para filtragem, com as atualizações de instruções e da skill, o perfil de QA e os testes. Comece cada um a partir de `main` atualizado. O fluxo de filtragem e qualidade compartilha uma sessão, worktree e branch para que você possa aproveitar seu trabalho à medida que explora cada ferramenta. O exercício final de canvas permanece em sua própria sessão para que você se concentre na criação e no teste da superfície compartilhada sem repetir o fluxo de PR.
 
@@ -53,7 +53,7 @@ Antes de participar deste workshop, verifique se você tem:
 > Como o aplicativo Copilot é executado no seu computador, e não em um codespace, a [Lição 0][ex0] orienta você na instalação do Node.js e na criação da sua cópia do projeto antes da instalação do aplicativo.
 
 > [!NOTE]
-> Se você usa o Copilot Business ou o Copilot Enterprise, o administrador deve habilitar a política **Copilot CLI** para que você possa usar o aplicativo.
+> Se você usa o Copilot Business ou o Copilot Enterprise, o administrador deve manter habilitada a política **GitHub Copilot app**. Essa política é diferente da política do Copilot CLI.
 
 ## Começar
 

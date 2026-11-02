@@ -3,7 +3,7 @@ title: "Lição 0 - Pré-requisitos"
 description: "Prepare-se para as lições do aplicativo GitHub Copilot: instale o Node.js para o projeto Tailspin Toys e crie sua própria cópia do repositório a partir do modelo."
 authors:
   - geektrainer
-lastUpdated: 2026-06-30
+lastUpdated: 2026-10-22
 ---
 
 O aplicativo GitHub Copilot é um aplicativo para desktop que funciona como ponto central tanto para o Copilot quanto para o GitHub. Ele oferece acesso rápido a issues e pull requests e, naturalmente, permite que você desenvolva usando o GitHub Copilot. Durante este workshop, você trabalhará localmente com o aplicativo Tailspin Toys, criado com Astro, e com o aplicativo GitHub Copilot. Antes de começar, vamos verificar se o Node.js está instalado localmente e depois instalar o aplicativo Copilot.
@@ -20,13 +20,14 @@ Em várias lições, você pedirá a um agente que crie recursos e execute local
 A opção mais simples em todas as plataformas é o instalador oficial:
 
 1. No sistema operacional, abra uma janela de terminal usando o Windows Terminal, o Terminal do macOS ou o aplicativo que você costuma usar.
-2. Execute o comando a seguir para verificar a versão do Node.js instalada:
+2. Execute os comandos a seguir para verificar as versões instaladas do Node.js e do npm:
 
-    ```shell
-    node --version
-    ```
+   ```shell
+   node --version
+   npm --version
+   ```
 
-3. Se ela atender aos requisitos do README e do `package.json` do projeto, pule para a próxima seção.
+3. Se os dois comandos forem executados sem erros e o Node.js atender aos requisitos no README e em `package.json` do projeto, pule para a próxima seção.
 
 > [!TIP]
 > Você só precisa concluir estas etapas se não tiver o Node instalado ou se precisar atualizá-lo.
@@ -37,14 +38,18 @@ A opção mais simples em todas as plataformas é o instalador oficial:
 7. Após a instalação, abra uma nova janela de terminal.
 8. Confirme a instalação na nova janela de terminal executando:
 
-    ```bash
-    node --version
-    ```
+   ```bash
+   node --version
+   npm --version
+   ```
 
-9. Você deve ver a versão que instalou.
+9. Você deverá ver as versões instaladas do Node.js e do npm.
 
 > [!IMPORTANT]
 > Cada worktree também precisa das dependências do projeto e do Chromium do Playwright para verificações E2E. Siga o README do repositório Tailspin Toys ao preparar uma worktree e revise qualquer solicitação de instalação antes de aprová-la.
+
+> [!IMPORTANT]
+> O agente do aplicativo Copilot também precisa conseguir executar `node --version` e `npm --version`. O fato de os comandos funcionarem no terminal habitual não garante que estejam disponíveis para o aplicativo. Feche o aplicativo completamente e abra-o novamente depois de instalar o Node.js ou alterar o PATH. Se algum comando continuar falhando em uma sessão, siga as [etapas para solucionar problemas do ambiente da sessão][session-environment] antes de continuar.
 
 ## Configurar o repositório do laboratório
 
@@ -86,3 +91,4 @@ Em seguida, você [instalará o aplicativo GitHub Copilot][next-lesson], conecta
 [node-download]: https://nodejs.org/en/download
 [template-repository]: https://docs.github.com/repositories/creating-and-managing-repositories/creating-a-template-repository
 [about-copilot-app]: https://docs.github.com/copilot/concepts/agents/github-copilot-app
+[session-environment]: ../3-agent-modes/#start-a-session-from-the-issue
